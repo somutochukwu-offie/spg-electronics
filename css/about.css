@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 12px;
+}
+
+.logo span:nth-child(1) {
+    background-color: goldenrod;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 2px;
+}
+
+.logo span:nth-child(2) {
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.logo p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 4.5rem;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: brown;
+}
+
+header nav {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: relative;
+}
+
+
+
+.mobile ul.mobile-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: goldenrod;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+    padding: 2rem 1rem;
+   
+}
+
+.mobile button {
+    position: relative;
+}
+
+.mobile button:hover ul {
+    display: flex;
+    
+}
+
+header .mobile-dropdown a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.mobile-dropdown a {
+    font-weight: 700;
+    font-size: 1rem; 
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+header .desktop-nav {
+    display: none;
+}
+
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("../images/image1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+    gap: .9rem;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0);
+    z-index: 3;
+}
+
+.hero h2 {
+    color: rgb(239, 175, 13);
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+
+/*Story  */
+
+section {
+    background-color: beige;
+    
+}
+
+.story h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: 2rem 0;
+}
+
+
+.story div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 2rem;
+    text-align: center;
+}
+
+
+/* What make us unique */
+
+.unique h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: 2rem 0;
+}
+
+.unique div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 2rem;
+    text-align: center;
+}
+
+/* Values */
+
+.values h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: 2rem 0;
+}
+
+.values div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 0 2rem;
+    text-align: center;
+}
+
+/* Guarantee */
+
+.guarantee h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: 2rem 0 0.5rem 0;
+}
+
+.guarantee p {
+    text-align: center;
+    padding: 1rem;
+}
+
+.guarantee div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: yellowgreen;
+    text-align: center;
+    color: aliceblue;
+    height: 4.5rem;
+    
+}
+
+
+
+
+
+@media (min-width: 768px) {
+   
+    /* logo */
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .logo span:nth-child(1)   {
+        width: 3rem;
+        height: 3rem;
+    }
+    /* Header */
+    header .desktop-nav {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    header ul a {
+        color: aliceblue;
+    }
+
+    header ul a:hover {
+        color: orange;
+        text-decoration: underline;
+    }
+    .mobile {
+        display: none;
+    }
+    /* Hero */
+    .hero {
+        width: 100%;
+        min-height: 50vh;
+        z-index: 5;
+        gap: 1.5rem;
+       
+    }
+
+    .hero h2 {
+        font-weight: 700;
+        font-size: 2rem;
+        max-width: 40rem;
+    }
+
+   
+}
+   
+
+@media (min-width: 1024px) {
+    
+    /* Hero */
+    .hero {
+        width: 100%;
+        min-height: 100vh;
+        z-index: 5;
+        gap: 1.5rem;
+       
+    }
+
+    .hero h2 {
+        font-weight: 900;
+        font-size: 3rem;
+        
+    }
+}
+    
+
+   
+

@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 12px;
+}
+
+.logo span:nth-child(1) {
+    background-color: goldenrod;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 2px;
+}
+
+.logo span:nth-child(2) {
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.logo p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 4.5rem;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: brown;
+}
+
+header nav {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: relative;
+}
+
+
+
+.mobile ul.mobile-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: goldenrod;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+    padding: 2rem 1rem;
+   
+}
+
+.mobile button {
+    position: relative;
+}
+
+.mobile button:hover ul {
+    display: flex;
+    
+}
+
+header .mobile-dropdown a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.mobile-dropdown a {
+    font-weight: 700;
+    font-size: 1rem; 
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+header .desktop-nav {
+    display: none;
+}
+
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("../images/image1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+    gap: .9rem;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0);
+    z-index: 3;
+}
+
+.hero h1 {
+    color: rgb(239, 175, 13);
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.hero p {
+    color: goldenrod;
+    font-weight: 700;
+    font-size: .8rem;
+    text-align: center;
+    max-width: 15rem;
+}
+
+.hero button {
+    border: 1px solid gray;
+    background-color: brown;
+    font-size: 10px;
+    border-radius: 1.5rem;
+    padding: .5rem .9rem;
+    color: aliceblue;
+    margin-bottom: 1rem;
+}
+
+/* Features */
+.features {
+    background-color: beige;
+
+}
+
+.features h2 {
+  font-family: "Poppins", sans-serif;  
+}
+.feats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    gap: 2rem;
+    background-color: rgb(185, 182, 182);
+    color: white;
+   
+}
+
+.box img {
+    width: 10rem;
+    height: 7rem;
+    
+}
+
+.box {
+    display: grid;
+    grid-template-columns:  (200px);
+    grid-template-rows:  auto; 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 25rem;
+    margin: 0.9rem;
+    gap: 1.5rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+
+}
+
+
+
+.box strong {
+    font-size: small;
+    text-align: center;
+}
+
+.box p {
+    font-size: small;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 0.4rem;
+}
+
+.box a {
+    text-align: center;
+    background-color: gold;
+    border-radius: 7px;
+    padding: .7rem;
+}
+
+.box a:hover {
+    background-color: brown;
+    color: goldenrod;
+}
+
+.box div:hover {
+    background-color: aliceblue;
+    scale: 1.1;
+    transition: ease-in-out .3s;
+}
+
+/* Products */
+
+
+.product {
+    background-color: beige;
+
+}
+
+
+
+.prod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 1rem;
+    background-color: rgb(185, 182, 182);
+    color: white;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.prod h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+.product-container img {
+    width: 10rem;
+    height: 7rem;
+    
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns:  (200px);
+    grid-template-rows:  auto; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.product-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 25rem;
+    margin: 0.9rem;
+    gap: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+}
+
+.product-container strong {
+    font-size: small;
+    text-align: center;
+}
+
+.product-container p {
+    
+    text-align: center;
+
+
+}
+
+.product-container a {
+    text-align: center;
+    background-color: gold;
+    border-radius: 7px;
+    padding: .7rem;
+}
+
+.product-container a:hover {
+    background-color: blue;
+    color: goldenrod;
+}
+
+
+.product-container div:hover {
+    background-color: aliceblue;
+    scale: 1.1;
+    transition: ease-in-out .3s; 
+}
+
+/* Special-Offer */
+
+.special-offer  {
+   background-color: beige; 
+   padding: 2rem 0;
+}
+
+.special-offer h2 {
+    
+    font-family: "Poppins", sans-serif;
+}
+
+.special {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.offer {
+    max-width: 50rem;
+    max-height: 50rem;
+    margin: 0 2rem;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.offer h2{
+    padding: 1rem 0;
+}
+
+.offer strong {
+    text-align: center;
+    color: red;
+}
+
+.offer p {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Why Choose Us */
+
+.box1 {
+    background-color: beige;
+}
+
+.box1 h2{
+
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.box1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: yellowgreen;
+    text-align: center;
+    color: aliceblue;
+    height: 4.5rem;
+    
+}
+
+
+
+@media (min-width: 768px) {
+   
+    /* logo */
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .logo span:nth-child(1)   {
+        width: 3rem;
+        height: 3rem;
+    }
+    /* Header */
+    header .desktop-nav {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    header ul a {
+        color: aliceblue;
+    }
+
+    header ul a:hover {
+        color: orange;
+        text-decoration: underline;
+    }
+    .mobile {
+        display: none;
+    }
+    /* Hero */
+    .hero {
+        width: 100%;
+        min-height: 50vh;
+        z-index: 5;
+        gap: 1.5rem;
+       
+    }
+
+    .hero h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        max-width: 40rem;
+    }
+
+    .hero p {
+        color:  rgb(239, 175, 13);
+        font-weight: 600;
+        font-size: 2rem;
+        max-width: 40rem;
+    
+    }
+
+    .hero button {
+      padding: 1rem 2rem;  
+      font-size: 20px;
+     
+    }
+
+    /* Features */
+
+    .box {
+        display: grid;
+        grid-template-columns:   repeat(2, 200px);
+        grid-template-rows: auto; 
+        gap: 5rem;
+    
+    
+    }
+    .box div {
+       
+        width: 16rem;
+       
+
+    }
+
+    /* Product */
+    .product-container {
+        display: grid;
+        grid-template-columns:   repeat(2, 200px);
+        grid-template-rows: auto; 
+        gap: 5rem;  
+    }
+
+    .product-container div {
+        width: 16rem;
+    }
+
+    
+
+}
+
+@media (min-width: 1024px) {
+    
+    /* Hero */
+    .hero {
+        width: 100%;
+        min-height: 100vh;
+        z-index: 5;
+        gap: 1.5rem;
+       
+    }
+
+    .hero h1 {
+        font-weight: 900;
+        font-size: 3rem;
+        
+    }
+
+    .hero p {
+        
+        font-weight: 700;
+        font-size: 3rem;
+    
+    
+    }
+
+    .hero button {
+      padding: 1rem 2rem;  
+      font-size: 25px;
+     
+    }
+
+    /* Features */
+    .feats p {
+        max-width: 40rem;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns:   repeat(4, 200px);
+        grid-template-rows: auto; 
+        gap: 5rem;
+    
+    
+    }
+
+   /* Product */
+
+    .product-container {
+        display: grid;
+        grid-template-columns:   repeat(4, 200px);
+        grid-template-rows: auto; 
+        gap: 5rem;  
+    }
+
+     
+    
+    
+     
+   
+    
+    
+
+}
