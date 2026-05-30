@@ -108,7 +108,11 @@ header .desktop-nav {
 
 .shop {
     background-color: beige;
-    padding: 3rem;
+    padding: 1rem 3rem 1rem 0.5rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -122,31 +126,33 @@ header .desktop-nav {
 .shop-content img {
     width: 5rem;
     height: 3rem;
-    display: flex;
+    align-self: center;
     
 }
 
 .shop-content {
     display: grid;
-    grid-template-columns: repeat(2, 115px );
+    grid-template-columns: repeat(2, 150px );
     grid-template-rows: repeat(auto, 200px);
     margin: 0 2rem;
-    padding: 1.5rem 0 0 2.1rem;
     gap: 2rem;
     justify-content: center;
     align-items: center;
+    
 }
 
 .shop-content span {
     display: block;
-    
+    max-width: 7rem;
+    align-self: center;
+    text-align: center;
 }
 
 .shop-content div {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 7rem;
+    width: 12rem;
     height: 12rem
     
     
@@ -158,23 +164,23 @@ header .desktop-nav {
     color: white;
     border: 1px solid;
     padding: 0.2rem;
-    align-self: self-start;
+    align-self: center;
     max-width: 10rem;
-    text-align: center;
+    align-self: center;
     font-size:x-small
     
 }
 
 .shop-content div:hover {
     background-color: aliceblue;
-    scale: .8;
+    scale: 1.1;
     transition: ease-in-out 0.3s;
 }
 
 
 .shop-content div a {
     border: 1px solid;
-    align-self: self-start;
+    align-self: center;
     padding: 0.3rem;
     background: gray;
     color: yellow;
@@ -233,6 +239,13 @@ footer {
     }
     
     /* All product */
+
+
+    .shop {
+    
+        padding: 3rem 8rem;
+        
+    }
     
     .shop-content img {
         width: 7rem;
@@ -264,12 +277,14 @@ footer {
     
         text-align: center;
         align-self: center;
-    
+        
     
     }
     .shop-content span {
    
         text-align: center;
+        font-size: small;
+        max-width: 15rem;
     }
 
 }
