@@ -154,6 +154,11 @@ section {
     padding: 2rem;
 }
 
+.box1 div label {
+    display: block;
+    padding: 0.5rem 0;
+}
+
 .box1  {
     display: flex;
     flex-direction: column;
@@ -173,10 +178,10 @@ section {
 }
 
 .contact textarea {
-    width: 250px;
+    width: 270px;
     height: auto;
     padding: 0.5rem;
-    width: 10rem;
+    
 }
 
 .contact button {
@@ -207,6 +212,11 @@ section {
     
     text-align: center;
     padding: 0 1rem;
+}
+
+.info-container div {
+    padding: 0.9rem 0;
+    font-size: larger;
 }
 
 .media {
@@ -302,7 +312,12 @@ footer {
         font-size: 2rem;
         max-width: 40rem;
     }
-
+    
+    .box1 div label {
+        display: block;
+        padding: 0.5rem 0;
+    }
+    
     .contact input {
      width: 500px;
      height: 50px;
