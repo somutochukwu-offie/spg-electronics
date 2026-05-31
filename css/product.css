@@ -258,14 +258,14 @@ footer {
 
     .shop-content {
         display: grid;
-        grid-template-columns: repeat(4, 170px );
+        grid-template-columns: repeat(4, 140px );
         grid-template-rows: repeat(auto, 200px);
         margin: 0 2rem;
         padding: 1.5rem;
         gap: 2rem;
         justify-content: center;
         align-items: center;
-        padding: 1rem 0 0 1.3rem;
+        padding: 1rem 0 0 0;
     }
 
     .shop-content div a {
