@@ -139,6 +139,7 @@ header .desktop-nav {
     gap: 2rem;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0 0 0.5rem;
     
 }
 
@@ -153,8 +154,8 @@ header .desktop-nav {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 12rem;
-    height: 12rem
+    width: 10rem;
+    height: 10rem
     
     
     
@@ -256,6 +257,17 @@ footer {
 
     }
 
+    .shop-content div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 12rem;
+        height: 12rem
+    
+    
+    
+    }
+
     .shop-content {
         display: grid;
         grid-template-columns: repeat(4, 140px );
@@ -292,18 +304,18 @@ footer {
 
 
 
-@media (min-width: 1024) {
+@media (min-width: 1024px) {
     /* All Products */
     .shop-content img {
-        width: 35rem;
-        height: 20rem;
+        width: 5rem;
+        height: 3rem;
         
     }
 
     .shop-content {
         display: grid;
-        grid-template-columns: repeat(4, 400px );
-        grid-template-rows: repeat(auto, 400px);
+        grid-template-columns: repeat(5, 140px );
+        grid-template-rows: repeat(auto, 200px);
         margin: 0 2rem;
         padding: 1.5rem;
         gap: 2rem;

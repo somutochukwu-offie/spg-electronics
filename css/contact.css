@@ -342,22 +342,22 @@ footer {
     }
 
     .contact input {
-    width: 500px;
-    height: 50px;
-    padding: 0.5rem;
-}
+        width: 500px;
+        height: 50px;
+        padding: 0.5rem;
+    }
 
-.contact textarea {
-    width: 500px;
-    height: auto;
-    padding: 0.5rem;
-}
+    .contact textarea {
+        width: 500px;
+        height: auto;
+        padding: 0.5rem;
+    }
 
-.contact button {
-    width: 200px;
-    height: 40px;
+    .contact button {
+        width: 200px;
+        height: 40px;
 
-}
+    }
 }
     
 
